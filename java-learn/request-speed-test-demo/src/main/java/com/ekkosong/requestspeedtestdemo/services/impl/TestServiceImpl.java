@@ -11,8 +11,8 @@ public class TestServiceImpl implements TestService {
     private static final int TASK_NUM = 5;
     ExecutorService threadPool = Executors.newFixedThreadPool(12);
     ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
-    ExecutorService customThreadPool = new ThreadPoolExecutor(5, 13,
-            1L, TimeUnit.SECONDS, new LinkedBlockingQueue<>(8),
+    ExecutorService customThreadPool = new ThreadPoolExecutor(8, 17,
+            1L, TimeUnit.SECONDS, new LinkedBlockingQueue<>(),
             Executors.defaultThreadFactory(), new ThreadPoolExecutor.AbortPolicy());
 
     /**

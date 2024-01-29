@@ -15,7 +15,7 @@ public class SubService implements Runnable{
     public void run() {
         // System.out.println(serviceName + " begin");
         try {
-            Thread.sleep(200);
+            Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
