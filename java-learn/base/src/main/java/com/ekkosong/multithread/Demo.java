@@ -35,7 +35,7 @@ public class Demo {
         //     System.out.println("doMainTaskWithCachedThreadPool " + i);
         // }
         // System.out.println("【doMainTaskWithCachedThreadPool】 cost time " + (System.currentTimeMillis() - start) + "ms");
-        
+
         start = System.currentTimeMillis();
         for (int i = 0; i < 100; i++) {
             mainService.doMainTaskWithCustomThreadPool();
