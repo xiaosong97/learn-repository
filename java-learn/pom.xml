@@ -10,7 +10,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>base</module>
-        <module>test-demo</module>
     </modules>
 
     <properties>
