@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Provider-Common" />
+        <module name="Consumer" />
+        <module name="Provider" />
+        <module name="rpc-core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ekkorpc" target="21" />
+      <module name="ekkorpc-core" target="21" />
+      <module name="rpc-demo" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Consumer" options="" />
+      <module name="Provider" options="" />
+      <module name="Provider-Common" options="" />
+      <module name="ekko-rpc" options="" />
+      <module name="ekkorpc" options="-parameters" />
+      <module name="ekkorpc-core" options="-parameters" />
+      <module name="rpc-core" options="" />
+      <module name="rpc-demo" options="-parameters" />
+    </option>
+  </component>
+</project>
